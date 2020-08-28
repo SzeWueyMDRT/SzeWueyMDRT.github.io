@@ -5,10 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MDRT Sze Wuey</title>
 </head>
-<body>
-    <h4>loading...</h4>
+<body onload="myFunction()">
+    <h1>Leading you to MDRT Sze Wuey.</h1>
+    <h2 id="loading">loading...</h2>
 </body>
-<script type="text/javascript">
-    window.location = "https://api.whatsapp.com/send?phone=60125312015&text=Hi, MDRT SzeWuey!";
+<script>
+function myFunction() {
+    var list = document.getElementById("loading");
+    var counter = 1;
+    var x = setInterval(function() {
+        counter++;
+        var tmp = counter % 3;
+        //console.log(tmp);
+        var tmpString = 'loading';
+        switch(tmp) {
+          case 1:
+            tmpString += '.';
+            break;
+          case 2:
+            tmpString += '..';
+            break;
+          default:
+            tmpString += '...';
+        }
+        list.innerHTML = tmpString;
+        if (counter >= 10){
+            window.location = "https://api.whatsapp.com/send?phone=60125312015&text=Hi, MDRT SzeWuey!";
+        }
+    }, 100);
+
+
+}
+
 </script>
 </html>
