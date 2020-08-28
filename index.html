@@ -11,6 +11,7 @@
 </body>
 <script>
 function myFunction() {
+    var upbound = Math.floor((Math.random() * 50) + 50);
     var list = document.getElementById("loading");
     var counter = 1;
     var x = setInterval(function() {
@@ -29,10 +30,10 @@ function myFunction() {
             tmpString += '...';
         }
         list.innerHTML = tmpString;
-        if (counter >= 10){
+        if (counter >= upbound){
             window.location = "https://api.whatsapp.com/send?phone=60125312015&text=Hi, MDRT SzeWuey!";
         }
-    }, 100);
+    }, 66);
 
 
 }
