@@ -1,11 +1,29 @@
 @charset "UTF-8";
+/*!
+  * customize parrt
+  */
+.help-note {
+    font-size: 0.75rem;
+    margin-top: 0px;
+    font-weight: bold;
+}
+.radio > label {
+    font-size: 1rem !important;
+}
 
+.btn-custom {
+    background-color:#3F90E1!important;
+    color: white!important;
+    border-color : #3F90E1!important;
+}
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -40,7 +58,7 @@
 *,
 :after,
 :before {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html {
@@ -4945,7 +4963,7 @@ input[type=submit].btn-block {
 .card-header {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
-    background-color: rgba(0, 0, 0, .03);
+    background-color: rgba(117, 200, 255, 0.3);
     border-bottom: .125rem solid rgba(0, 0, 0, .125)
 }
 
@@ -6890,7 +6908,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-    background-color: #7ce5ff6e !important
+    background-color: #A0BFDD !important
 }
 
 a.bg-primary:focus,
@@ -11021,7 +11039,7 @@ a.text-dark:hover {
     left: 0;
     transition: all .2s ease-in-out;
     opacity: 0;
-    background-color: rgba(78, 199, 255, 0.795)
+    background-color: rgba(44, 62, 80, 0.75)
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
@@ -11029,7 +11047,8 @@ a.text-dark:hover {
 }
 
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-    font-size: 1.5rem
+    padding: 1rem;
+    /* font-size: 1.5rem */
 }
 
 .portfolio-modal .portfolio-modal-title {
